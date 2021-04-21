@@ -32,6 +32,7 @@ public class MyController {
 
     @GetMapping(value = "/products/add")
     public String addProducts(Model uiModel){
+        uiModel.addAttribute("product", new Product());
         return "addingProducts";
     }
 

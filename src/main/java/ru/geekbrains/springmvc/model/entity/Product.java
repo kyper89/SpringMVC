@@ -8,9 +8,11 @@ import java.util.Map;
 
 public class Product {
 
-    private final int id;
-    private final String title;
-    private final BigDecimal cost;
+    private int id;
+    private String title;
+    private BigDecimal cost;
+
+    public Product(){}
 
     public Product(int id, String title, BigDecimal cost) {
         this.id = id;
@@ -43,5 +45,17 @@ public class Product {
 
     public BigDecimal getCost() {
         return cost;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setCost(BigDecimal cost) {
+        this.cost = cost;
     }
 }

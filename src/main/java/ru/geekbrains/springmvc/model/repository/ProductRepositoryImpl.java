@@ -23,8 +23,9 @@ public class ProductRepositoryImpl implements ProductRepository{
     public List<Product> getProducts() {
         return products;
     }
+
     @Override
     public void saveProduct(Product product) {
-
+        products.add(product);
     }
 }
